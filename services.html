@@ -14,10 +14,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');try{if(!sessionStorage.getItem('bloovaSplash')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('splash-on','hold');setTimeout(function(){document.documentElement.classList.remove('splash-on','hold')},9000)}}catch(e){}</script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="splash" id="splash" role="dialog" aria-label="Welcome to Bloova">
+  <svg class="sp-rings" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+    <circle style="--i:0" cx="200" cy="200" r="40" pathLength="1"/>
+    <circle style="--i:1" cx="200" cy="200" r="78" pathLength="1"/>
+    <circle style="--i:2" cx="200" cy="200" r="116" pathLength="1"/>
+    <circle style="--i:3" cx="200" cy="200" r="152" pathLength="1"/>
+    <circle style="--i:4" cx="200" cy="200" r="186" pathLength="1"/>
+    <circle style="--i:5" cx="200" cy="200" r="198" pathLength="1"/>
+  </svg>
+  <div class="sp-core">
+    <img class="sp-logo" src="bloova-logo.png" alt="Bloova" width="780" height="221">
+    <span class="sp-rule"></span>
+    <p class="sp-line">A creative growth studio and media brand</p>
+    <p class="sp-line">Based in Lagos, Nigeria</p>
+    <div class="sp-words" aria-hidden="true"><span>Strategy</span><span>Creativity</span><span>Technology</span><span>Growth</span></div>
+  </div>
+  <div class="sp-curtain t"></div><div class="sp-curtain b"></div>
+  <div class="sp-foot"><span class="sp-count" id="sp-count">0</span><button class="sp-skip" type="button" id="sp-skip">Enter site</button></div>
+  <div class="sp-bar"></div>
+</div>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="index.html" aria-label="Bloova home"><img src="bloova-logo.png" alt="Bloova" width="140" height="40"></a>
@@ -35,6 +57,13 @@
 </header>
 <main id="main">
 <section class="page-head">
+  <svg class="rings" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+    <circle class="ring" style="--i:0" cx="200" cy="200" r="60" pathLength="1"/>
+    <circle class="ring" style="--i:1" cx="200" cy="200" r="110" pathLength="1"/>
+    <circle class="ring" style="--i:2" cx="200" cy="200" r="160" pathLength="1"/>
+    <circle class="ring" style="--i:3" cx="200" cy="200" r="198" pathLength="1"/>
+    <circle class="dot" cx="200" cy="200" r="5"/>
+  </svg>
   <div class="wrap">
     <h1>Services that work together.</h1>
     <p class="lede">Brand, content, performance, media and technology under one roof, so every piece supports the same goal.</p>
@@ -43,16 +72,7 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="rows">
-      <div class="row"><h3>Brand marketing</h3><div><p>We define how your business is positioned, how it looks and how it sounds, then carry that identity into every place people meet you. The result is a brand that is easy to recognise, easy to explain and hard to confuse with anyone else.</p></div></div>
-      <div class="row"><h3>Digital and social media marketing</h3><div><p>We plan the content calendar, publish, manage the community and report on what the numbers say, so your pages grow with purpose and stay consistent.</p></div></div>
-      <div class="row"><h3>Content marketing</h3><div><p>We write, shoot and edit content that answers real questions and holds attention, from short videos to long form features.</p></div></div>
-      <div class="row"><h3>Performance marketing</h3><div><p>We plan, launch and improve paid campaigns across social and search, and connect spend to results you can measure.</p></div></div>
-      <div class="row"><h3>SEO and brand visibility</h3><div><p>We improve how your business appears in search results and across the web, so people looking for what you offer can find you first.</p></div></div>
-      <div class="row"><h3>Media and editorial coverage</h3><div><p>We tell the stories of founders, brands and creatives, and cover the events and moments that shape culture, through features, interviews and original content.</p></div></div>
-      <div class="row"><h3>Web and digital solutions</h3><div><p>We design and build websites and digital experiences that are clear to use, quick to load and made to convert.</p></div></div>
-      <div class="row"><h3>Tech</h3><div><p>We build and connect technology, including AI, that helps a business understand its audience, work faster and measure growth.</p></div></div>
-    </div>
+    <div class="cards two"><article class="card reveal" style="--r:0"><h3>Brand marketing</h3><p>We define how your business is positioned, how it looks and how it sounds, then carry that identity into every place people meet you. The result is a brand that is easy to recognise, easy to explain and hard to confuse with anyone else.</p></article><article class="card reveal" style="--r:1"><h3>Digital and social media marketing</h3><p>We plan the content calendar, publish, manage the community and report on what the numbers say, so your pages grow with purpose and stay consistent.</p></article><article class="card reveal" style="--r:0"><h3>Content marketing</h3><p>We write, shoot and edit content that answers real questions and holds attention, from short videos to long form features.</p></article><article class="card reveal" style="--r:1"><h3>Performance marketing</h3><p>We plan, launch and improve paid campaigns across social and search, and connect spend to results you can measure.</p></article><article class="card reveal" style="--r:0"><h3>SEO and brand visibility</h3><p>We improve how your business appears in search results and across the web, so people looking for what you offer can find you first.</p></article><article class="card reveal" style="--r:1"><h3>Media and editorial coverage</h3><p>We tell the stories of founders, brands and creatives, and cover the events and moments that shape culture, through features, interviews and original content.</p></article><article class="card reveal" style="--r:0"><h3>Web and digital solutions</h3><p>We design and build websites and digital experiences that are clear to use, quick to load and made to convert.</p></article><article class="card reveal" style="--r:1"><h3>Tech</h3><p>We build and connect technology, including AI, that helps a business understand its audience, work faster and measure growth.</p></article></div>
   </div>
 </section>
 

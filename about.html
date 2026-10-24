@@ -14,10 +14,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');try{if(!sessionStorage.getItem('bloovaSplash')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('splash-on','hold');setTimeout(function(){document.documentElement.classList.remove('splash-on','hold')},9000)}}catch(e){}</script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="splash" id="splash" role="dialog" aria-label="Welcome to Bloova">
+  <svg class="sp-rings" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+    <circle style="--i:0" cx="200" cy="200" r="40" pathLength="1"/>
+    <circle style="--i:1" cx="200" cy="200" r="78" pathLength="1"/>
+    <circle style="--i:2" cx="200" cy="200" r="116" pathLength="1"/>
+    <circle style="--i:3" cx="200" cy="200" r="152" pathLength="1"/>
+    <circle style="--i:4" cx="200" cy="200" r="186" pathLength="1"/>
+    <circle style="--i:5" cx="200" cy="200" r="198" pathLength="1"/>
+  </svg>
+  <div class="sp-core">
+    <img class="sp-logo" src="bloova-logo.png" alt="Bloova" width="780" height="221">
+    <span class="sp-rule"></span>
+    <p class="sp-line">A creative growth studio and media brand</p>
+    <p class="sp-line">Based in Lagos, Nigeria</p>
+    <div class="sp-words" aria-hidden="true"><span>Strategy</span><span>Creativity</span><span>Technology</span><span>Growth</span></div>
+  </div>
+  <div class="sp-curtain t"></div><div class="sp-curtain b"></div>
+  <div class="sp-foot"><span class="sp-count" id="sp-count">0</span><button class="sp-skip" type="button" id="sp-skip">Enter site</button></div>
+  <div class="sp-bar"></div>
+</div>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="index.html" aria-label="Bloova home"><img src="bloova-logo.png" alt="Bloova" width="140" height="40"></a>
@@ -35,6 +57,13 @@
 </header>
 <main id="main">
 <section class="page-head">
+  <svg class="rings" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+    <circle class="ring" style="--i:0" cx="200" cy="200" r="60" pathLength="1"/>
+    <circle class="ring" style="--i:1" cx="200" cy="200" r="110" pathLength="1"/>
+    <circle class="ring" style="--i:2" cx="200" cy="200" r="160" pathLength="1"/>
+    <circle class="ring" style="--i:3" cx="200" cy="200" r="198" pathLength="1"/>
+    <circle class="dot" cx="200" cy="200" r="5"/>
+  </svg>
   <div class="wrap">
     <h1>A creative growth studio and media brand.</h1>
     <p class="lede">Bloova helps businesses, founders and brands build stronger identities, improve visibility and grow. We bring strategy, branding, content, marketing, media and digital solutions together, so a business can be seen, understood and chosen.</p>
